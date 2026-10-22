@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">📚 Library System</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#issue">Issue</a></li>
+            <li><a href="#reserve">Reserve</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Library Book Reservation & Waiting Queue System</h1>
+            <p>Search books, check availability, issue books and reserve unavailable books easily.</p>
+            <a href="#books" class="main-btn">View Books</a>
+        </div>
+    </section>
+
+    <section class="features" id="issue">
+        <h2>Library Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🔍 Search Book</h3>
+                <p>Search for books using book ID or book name.</p>
+                <input type="text" placeholder="Enter book name">
+                <button>Search</button>
+            </div>
+
+            <div class="card">
+                <h3>📖 Issue Book</h3>
+                <p>Issue available books to students.</p>
+                <input type="number" placeholder="Book ID">
+                <input type="text" placeholder="Student Name">
+                <button>Issue Book</button>
+            </div>
+
+            <div class="card">
+                <h3>📝 Reserve Book</h3>
+                <p>Join the waiting queue when a book is unavailable.</p>
+                <input type="number" placeholder="Book ID">
+                <input type="text" placeholder="Student Name">
+                <button>Reserve</button>
+            </div>
+
+            <div class="card">
+                <h3>↩ Return Book</h3>
+                <p>Return an issued book to the library.</p>
+                <input type="number" placeholder="Book ID">
+                <button>Return Book</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-section" id="books">
+        <h2>Available Books</h2>
+        <div class="book-container">
+            <div class="book">
+                <div class="book-icon">📕</div>
+                <h3>Java Programming</h3>
+                <p>Author: Herbert Schildt</p>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="book">
+                <div class="book-icon">📘</div>
+                <h3>Data Structures</h3>
+                <p>Author: Seymour Lipschutz</p>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="book">
+                <div class="book-icon">📗</div>
+                <h3>Computer Networks</h3>
+                <p>Author: Andrew Tanenbaum</p>
+                <span class="issued">Issued</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="queue-section" id="reserve">
+        <h2>Waiting Queue</h2>
+        <p>Students waiting for unavailable books are managed using the FIFO principle.</p>
+        <div class="queue">
+            <div>1️⃣ Student 1</div>
+            <span>→</span>
+            <div>2️⃣ Student 2</div>
+            <span>→</span>
+            <div>3️⃣ Student 3</div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Library Book Reservation System</h3>
+        <p>Java Data Structures Project</p>
+        <p>Array + Queue Implementation</p>
+    </footer>
+</body>
+</html>

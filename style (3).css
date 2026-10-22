@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+}
+
+nav {
+    background: #172554;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.main-btn {
+    display: inline-block;
+    background: white;
+    color: #1d4ed8;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.main-btn:hover {
+    background: #dbeafe;
+}
+
+.features {
+    padding: 70px 8%;
+}
+
+.features h2,
+.book-section h2,
+.queue-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.card button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background: #1d4ed8;
+}
+
+.book-section {
+    background: #eaf1ff;
+    padding: 70px 8%;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.book {
+    width: 280px;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.book h3 {
+    margin-bottom: 10px;
+}
+
+.book p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.available {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.issued {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.queue-section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.queue-section p {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.queue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.queue div {
+    background: #2563eb;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.queue span {
+    font-size: 25px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 6px;
+    color: #cbd5e1;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .queue {
+        flex-direction: column;
+    }
+
+    .queue span {
+        transform: rotate(90deg);
+    }
+}
